@@ -6,7 +6,6 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -97,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onSwiped(final RecyclerView.ViewHolder viewHolder, int direction) {
-            Log.i(MainActivity.cla ss.getSimpleName(), "Direction: " + direction);
+            Log.i(MainActivity.class.getSimpleName(), "Direction: " + direction);
 
             //adapter.notifyItemRemoved(viewHolder.getAdapterPosition());
 
